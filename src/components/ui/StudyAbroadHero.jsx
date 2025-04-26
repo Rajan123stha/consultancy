@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import Image from "../../assets/images/HomeHero.png"; // Adjust the path as necessary
 const StudyAbroadHero = () => {
   const destinations = [
     { name: "France", path: "/destinations/france" },
@@ -117,8 +117,19 @@ const StudyAbroadHero = () => {
             </motion.div>
 
             {/* Stats Card - Visa Success Rate */}
-            <motion.div
-              className="z-10 absolute bottom-10 left-1/2 bg-white p-3 rounded-xl shadow-lg hidden md:block"
+           
+          </div>
+
+          {/* Image */}
+          <div className="order-1 lg:order-2 relative">
+            <img
+              src={Image}
+              alt="Students studying abroad"
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+
+<motion.div
+              className="z-10 absolute top-2 left-2 bg-white p-3 rounded-xl shadow-lg hidden md:block"
               variants={statCardVariants}
               initial="hidden"
               animate="visible"
@@ -126,19 +137,10 @@ const StudyAbroadHero = () => {
               <p className="font-bold text-xl text-indigo-900">97.9%</p>
               <p className="text-sm text-gray-600">Success Rate</p>
             </motion.div>
-          </div>
-
-          {/* Image */}
-          <div className="order-1 lg:order-2 relative">
-            <img
-              src="/src/assets/images/HomeHero.png"
-              alt="Students studying abroad"
-              className="w-full h-auto rounded-lg shadow-2xl"
-            />
 
             {/* Stats Card - Universities */}
             <motion.div
-              className="absolute top-2 right-2 bg-white p-3 rounded-xl shadow-lg hidden md:block"
+              className="absolute bottom-5 right-2 bg-white p-3 rounded-xl shadow-lg hidden md:block"
               variants={statCardVariants}
               initial="hidden"
               animate="visible"
@@ -151,7 +153,7 @@ const StudyAbroadHero = () => {
 
             {/* End-to-end services tag */}
             <motion.div
-              className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg hidden md:block"
+              className="absolute top-2 right-2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg hidden md:block"
               variants={fadeIn}
               initial="hidden"
               animate="visible"
