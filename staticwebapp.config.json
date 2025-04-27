@@ -1,0 +1,36 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/images/*.{png,jpg,gif,svg}",
+      "/css/*",
+      "/js/*",
+      "/*.css",
+      "/*.js",
+      "/*.scss"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/test-preparation/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/mock-test",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/contact",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/destinations/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/about",
+      "rewrite": "/index.html"
+    }
+  ]
+}
