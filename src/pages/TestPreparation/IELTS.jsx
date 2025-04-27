@@ -207,7 +207,7 @@ const IELTS = () => {
             <p className="text-lg mb-6">
               Ready to take the first step towards your global academic dream?
             </p>
-            <p className="text-lg mb-6">Alfa Beta’s IELTS Program offers:</p>
+            <p className="text-lg mb-6">Our IELTS Program offers:</p>
             <ul className="list-disc list-inside text-lg space-y-2">
               <li>Online and In-Person Options</li>
               <li>Affordable Packages</li>
