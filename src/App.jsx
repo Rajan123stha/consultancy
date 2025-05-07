@@ -17,6 +17,9 @@ import IELTS from "./pages/TestPreparation/IELTS";
 import PTE from "./pages/TestPreparation/PTE";
 import Duolingo from "./pages/TestPreparation/Duolingo";
 import PageNotFound from "./pages/PageNotFound";
+import EuropeDestinations from "./pages/Destinations/Europe";
+import BlogPage from "./pages/Blog";
+import BlogPost from "./pages/Blog/BlogPost";
 
 function App() {
   return (
@@ -42,7 +45,9 @@ function App() {
             <Route path="/test-preparation/ielts" element={<IELTS />} />
             <Route path="/test-preparation/pte" element={<PTE />} />
             <Route path="/test-preparation/duolingo" element={<Duolingo />} />
-            {/* More routes can be added as needed */}
+            <Route path="/europe" element={<EuropeDestinations />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>

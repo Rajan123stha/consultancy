@@ -1,14 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Hero, Card, Button, StudyAbroadHero } from "../../components/ui";
 import {
   destinationsData,
   testPreparationsData,
 } from "../../data/educationData";
+import Visa from "../../assets/images/visa-assistance.jpg";
+import Counseling from "../../assets/images/education-counseler.jpg";
+import testPrepImg from "../../assets/images/test-prep.jpg";
+import { blogData } from "../../data/blogData";
 
 const HomePage = () => {
   // Using only first 4 items for home page
   const destinations = destinationsData.slice(0, 4);
   const testPreparations = testPreparationsData.slice(0, 3);
+
+  const services = [
+    {
+      title: "Education Counseling",
+      description:
+        "Expert guidance for choosing the right course and university abroad.",
+      image: Counseling,
+    },
+    {
+      title: "Visa Assistance",
+      description:
+        "Complete support for student visa application and documentation.",
+      image: Visa,
+    },
+    {
+      title: "Test Preparation",
+      description: "Comprehensive coaching for IELTS, PTE, and Duolingo.",
+      image: testPrepImg,
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -36,97 +61,35 @@ const HomePage = () => {
           </div>
 
           {/* Service Highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:-translate-y-1">
-              <div className="text-blue-600 mb-4">
-                <svg
-                  className="h-12 w-12 mx-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 14l9-5-9-5-9 5 9 5z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 14l9-5-9-5-9 5 9 5z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 14l9-5-9-5-9 5 9 5z"
-                  />
-                </svg>
+          <section className="py-16 bg-gray-50">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-center mb-12">
+                Our Services
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
+                  >
+                    <div className="h-48 overflow-hidden">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold mb-2">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600">{service.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Education Counseling
-              </h3>
-              <p className="text-gray-600">
-                Personalized guidance to help you choose the right course and
-                university based on your academic profile and career goals.
-              </p>
             </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:-translate-y-1">
-              <div className="text-blue-600 mb-4">
-                <svg
-                  className="h-12 w-12 mx-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Visa Assistance
-              </h3>
-              <p className="text-gray-600">
-                Complete support for student visa applications, including
-                documentation, preparation for visa interviews, and follow-ups.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:-translate-y-1">
-              <div className="text-blue-600 mb-4">
-                <svg
-                  className="h-12 w-12 mx-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Test Preparation
-              </h3>
-              <p className="text-gray-600">
-                Expert coaching for IELTS, PTE, and Duolingo English tests with
-                study materials, practice tests, and personalized feedback.
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
 
@@ -191,6 +154,63 @@ const HomePage = () => {
           <div className="text-center mt-12">
             <Button to="/test-preparation" variant="primary" size="lg">
               Explore Test Preparation
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Latest Insights
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Stay updated with the latest trends, tips, and guides in
+              international education.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogData.map((blog) => (
+              <Link
+                to={`/blog/${blog.slug}`}
+                key={blog.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm text-blue-600 font-medium">
+                      {blog.category}
+                    </span>
+                    <span className="text-sm text-gray-500">
+                      {blog.readTime}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600">
+                    {blog.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{blog.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">{blog.date}</span>
+                    <span className="text-sm text-gray-600">{blog.author}</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button to="/blog" variant="primary" size="lg">
+              View All Posts
             </Button>
           </div>
         </div>

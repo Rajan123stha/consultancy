@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import Image from "../../assets/images/HomeHero.png"; // Adjust the path as necessary
 const StudyAbroadHero = () => {
   const destinations = [
+    { name: "Cyprus", path: "/destinations/Cyprus" },
     { name: "France", path: "/destinations/france" },
     { name: "UK", path: "/destinations/uk" },
     { name: "Canada", path: "/destinations/canada" },
-    { name: "USA", path: "/destinations/usa" },
-    { name: "New Zealand", path: "/destinations/newzealand" },
+    
+    { name: "Spain", path: "/destinations/spain" },
   ];
 
   // Animation variants
@@ -134,7 +135,7 @@ const StudyAbroadHero = () => {
               initial="hidden"
               animate="visible"
             >
-              <p className="font-bold text-xl text-indigo-900">97.9%</p>
+              <p className="font-bold text-xl text-indigo-900">High</p>
               <p className="text-sm text-gray-600">Success Rate</p>
             </motion.div>
 

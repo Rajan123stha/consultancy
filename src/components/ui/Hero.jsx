@@ -129,7 +129,7 @@ const Hero = ({
             variants={imageVariants}
           >
             <img
-              src={heroAbroadImage}
+              src={backgroundImage}
               alt="Hero image"
               className="w-full h-auto max-h-[350px] object-cover rounded-lg shadow-lg" // Increased max-h from 300px to 350px
             />

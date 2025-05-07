@@ -8,8 +8,7 @@ const Destinations = () => {
       <Hero
         title="Study Abroad Destinations"
         subtitle="Explore our comprehensive range of study destinations and find your perfect educational pathway"
-        buttonText="Contact Us"
-        buttonLink="/contact"
+        
       />
 
       {/* Intro Section */}

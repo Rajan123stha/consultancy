@@ -2,14 +2,16 @@ import React from "react";
 import { Hero, Button } from "../ui";
 import { motion } from "framer-motion";
 
-const DestinationLayout = ({ data }) => {
+const DestinationLayout = ({ data, image }) => {
+  console.log("Destination Data:", data);
+  console.log("Image Data:", image); // Debugging line to check image data
+   // Debugging line to check data structure
   return (
     <div className="min-h-screen">
       <Hero
         title={data.title}
         subtitle={data.subtitle}
-        buttonText="Contact Us"
-        buttonLink="/contact"
+        backgroundImage={image}
       />
 
       {/* Intro Section */}
@@ -233,7 +235,7 @@ const DestinationLayout = ({ data }) => {
       </section>
 
       {/* Footnotes */}
-      {data.footnotes && data.footnotes.length > 0 && (
+      {/* {data.footnotes && data.footnotes.length > 0 && (
         <div className="bg-gray-50 py-4">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -245,7 +247,7 @@ const DestinationLayout = ({ data }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

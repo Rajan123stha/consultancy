@@ -357,5 +357,317 @@ export const destinationPageData = {
 
     footnotes: [],
   },
+
+  finland: {
+    title: "Study in Finland",
+    subtitle: "Innovative education, balanced lifestyle, and global career opportunities",
+    introText:
+      "Are you looking for an innovative and high-quality education system with a perfect work-life balance? Finland is known for its top-ranking universities, progressive education style, and student-friendly environment—making it an ideal destination for international students.",
+  
+    highlights: [
+      "IELTS and PTE accepted",
+      "Minimum GPA of 2.8",
+      "Gap years accepted",
+      "Option to apply for dependent visa (spouse and children)",
+      "High-quality education with modern infrastructure",
+      "Affordable tuition fees and living costs compared to other European countries",
+      "Safe, welcoming, and student-friendly environment",
+      "Opportunities for part-time work and post-graduation work permits",
+    ],
+  
+    popularCourses: [
+      "Business & Management",
+      "Engineering & Technology",
+      "Computer Science & IT",
+      "Environmental Sciences",
+      "Healthcare & Nursing",
+      "Arts & Design",
+    ],
+  
+    admissionRequirements: [
+      "Minimum GPA of 2.8 (for Bachelor's and Master's degrees)",
+      "IELTS or PTE scores accepted (Minimum 6.0 in IELTS)",
+      "Gap years accepted",
+      "Valid passport",
+      "Proof of funds to cover living expenses",
+      "Dependent visa options for your spouse and children",
+    ],
+  
+    careerOpportunities: {
+      text: "Finland’s job market is thriving, especially in tech, healthcare, and business fields. Students can work part-time during their studies (25 hours/week during term-time) and full-time during holidays. After graduation, there are plenty of opportunities to apply for a work visa and gain valuable experience in Finland or other EU countries.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Cyprus student visas",
+    ],
+  
+    footnotes: [],
+  }, italy: {
+    title: "Study in Italy",
+    subtitle: "World-class education in a country of culture, history, and opportunity",
+    introText:
+      "Italy is not only home to breathtaking landscapes, rich history, and stunning architecture but also offers some of the most renowned universities in the world. If you’re looking for high-quality education in a culturally vibrant country, Italy should be at the top of your list.",
+  
+    highlights: [
+      "Low GPA accepted",
+      "No IELTS or PTE required",
+      "Gap years accepted",
+      "Opportunity to apply for dependent visas (spouse and children)",
+      "Affordable tuition fees and cost of living compared to other European countries",
+      "High-quality education at internationally recognized institutions",
+      "Experience Italy’s rich cultural heritage and global job opportunities",
+    ],
+  
+    popularCourses: [
+      "Business & Management",
+      "Art & Design",
+      "Engineering & Technology",
+      "Architecture",
+      "Tourism & Hospitality",
+      "International Relations",
+    ],
+  
+    admissionRequirements: [
+      "Low GPA accepted",
+      "No IELTS or PTE required",
+      "Education gap up to 5 years accepted",
+      "Academic certificates (Minimum 50%)",
+      "Valid passport",
+      "Simple documentation—no financial proof required in many cases",
+      "Option for dependent visas for your spouse and children",
+    ],
+  
+    careerOpportunities: {
+      text: "Italy has a strong job market, particularly in fashion, design, engineering, and business sectors. Students are allowed to work part-time during their studies, and after graduation, they can apply for a work visa to gain professional experience in Italy or across the EU.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Cyprus student visas",
+    ],
+  
+    footnotes: [],
+  }, 
+  malta: {
+    title: "Study in Malta",
+    subtitle: "Affordable, English-speaking education in the heart of the Mediterranean",
+    introText:
+      "Malta, with its sunny Mediterranean climate, stunning coastlines, and vibrant history, offers an exceptional environment for international students. Known for its quality education system and welcoming atmosphere, Malta is a hidden gem for those seeking an affordable, English-speaking destination in Europe.",
+  
+    highlights: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Dependents allowed (spouse and children)",
+      "Affordable tuition fees and living costs",
+      "Courses taught in English",
+      "Quick and straightforward visa process",
+      "Warm, welcoming environment with a high quality of life",
+      "High opportunities for internships and part-time work",
+    ],
+  
+    popularCourses: [
+      "Business & Management",
+      "Information Technology",
+      "Tourism & Hospitality",
+      "Arts & Design",
+      "Law & International Relations",
+      "Social Sciences",
+    ],
+  
+    admissionRequirements: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Valid academic certificates (Minimum 50%)",
+      "Valid passport",
+      "Proof of sufficient funds (for visa purposes)",
+      "Option to apply for dependent visas for your family",
+    ],
+  
+    careerOpportunities: {
+      text: "Malta has a thriving job market, particularly in the fields of hospitality, business, IT, and finance. As a student, you can work part-time (20 hours per week) during your studies. After graduation, Malta’s job market offers great opportunities for international students to secure employment and gain valuable European work experience.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Malta student visas",
+    ],
+  
+    footnotes: [],
+  }, 
+  switzerland: {
+    title: "Study in Switzerland",
+    subtitle: "World-class education in a safe and stunning environment",
+    introText:
+      "Switzerland, famous for its high standard of living, stunning landscapes, and world-renowned universities, offers a unique combination of academic excellence and global opportunities. If you’re looking for top-tier education in a peaceful and culturally rich environment, Switzerland is the perfect choice.",
+  
+    highlights: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Dependents allowed (spouse and children)",
+      "High-quality education at prestigious universities",
+      "Opportunities for internships and part-time work",
+      "Safe, multicultural environment with excellent quality of life",
+      "Beautiful surroundings for a balanced student lifestyle",
+    ],
+  
+    popularCourses: [
+      "Business & Management",
+      "International Relations",
+      "Hospitality & Tourism Management",
+      "Engineering & Technology",
+      "Medicine & Health Sciences",
+      "Finance & Economics",
+    ],
+  
+    admissionRequirements: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Academic certificates (Minimum 50%)",
+      "Valid passport",
+      "Proof of financial stability (for visa purposes)",
+      "Option to apply for dependent visas for your family",
+    ],
+  
+    careerOpportunities: {
+      text: "Switzerland offers great career opportunities, particularly in finance, technology, and hospitality. Many universities have strong connections with top companies, offering excellent internship and job placement opportunities. Students can also work part-time (up to 15 hours per week) during their studies, and Switzerland’s job market is very welcoming for graduates.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Switzerland student visas",
+    ],
+  
+    footnotes: [],
+  },
+  poland: {
+    title: "Study in Poland",
+    subtitle: "Affordable European education with global recognition",
+    introText:
+      "Poland, with its rich history, vibrant culture, and world-class education system, offers an excellent opportunity for international students seeking high-quality education at an affordable price. Poland is quickly becoming one of Europe’s top study destinations, offering a range of academic programs in English and an enriching student experience.",
+  
+    highlights: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Dependents allowed (spouse and children)",
+      "Affordable tuition fees and cost of living",
+      "Programs available in English",
+      "A rich cultural experience and central location in Europe",
+      "High employment rate after graduation",
+    ],
+  
+    popularCourses: [
+      "Business & Management",
+      "Engineering & Technology",
+      "Medicine & Health Sciences",
+      "Computer Science & IT",
+      "Law & International Relations",
+      "Social Sciences & Humanities",
+    ],
+  
+    admissionRequirements: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Minimum academic qualifications (50% and above)",
+      "Valid passport",
+      "Proof of sufficient funds (for visa purposes)",
+      "Option for dependent visas (spouse and children)",
+    ],
+  
+    careerOpportunities: {
+      text: "Poland’s growing economy and vibrant job market offer excellent career prospects, particularly in business, engineering, technology, and healthcare sectors. Students can work part-time (up to 20 hours per week) during their studies, and after graduation, there are many opportunities to secure a work visa. Poland’s central location in Europe also offers students the chance to explore other European countries while studying.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Poland student visas",
+    ],
+  
+    footnotes: [],
+  },
+  dubai: {
+    title: "Study in Dubai",
+    subtitle: "World-class education in the heart of the Middle East",
+    introText:
+      "Dubai, the bustling metropolis known for its skyscrapers, luxurious lifestyle, and vibrant culture, is also becoming a leading destination for international students. With world-class universities, diverse programs, and access to global career opportunities, studying in Dubai offers students an exceptional education experience.",
+  
+    highlights: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Dependents allowed (spouse and children)",
+      "Excellent English-taught programs",
+      "Access to internships and part-time work",
+      "High employability and salary potential after graduation",
+      "Safe and multicultural environment",
+    ],
+  
+    popularCourses: [
+      "Business Administration & Management",
+      "Information Technology & Computer Science",
+      "Engineering & Architecture",
+      "Hospitality & Tourism Management",
+      "Design & Arts",
+      "Health & Medicine",
+      "Law & International Relations",
+    ],
+  
+    admissionRequirements: [
+      "No IELTS or PTE required",
+      "Low GPA accepted",
+      "Gap years accepted",
+      "Academic certificates (Minimum 50%)",
+      "Valid passport",
+      "Proof of sufficient funds for visa purposes",
+      "Option for dependent visas for your spouse and children",
+    ],
+  
+    careerOpportunities: {
+      text: "Dubai is known for its dynamic economy and job market, offering numerous career opportunities, especially in finance, technology, engineering, and hospitality. Students are allowed to work part-time (up to 20 hours per week), gaining valuable work experience while studying. After graduation, Dubai’s thriving job market offers excellent prospects for students to find full-time employment and begin their global careers.",
+      opportunities: [],
+    },
+  
+    whyChooseUs: [
+      "Admission assistance with low GPA or gap years",
+      "Full guidance on visa documents and SOP",
+      "No hidden charges or false promises",
+      "Support from application to arrival",
+      "100% success rate for Dubai student visas",
+    ],
+  
+    footnotes: [],
+  },
+  
+  
+  
+  
+  
+  
   // Add other countries with the same structure
 };

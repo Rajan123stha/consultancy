@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import LogoImage from "../../assets/images/Logo1.png"; // Import the actual logo image
+import LogoImage from "../../assets/images/Logo.png"; // Import the actual logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,13 +62,26 @@ const Navbar = () => {
 
   // Destinations list
   const destinations = [
+    {
+      name: "Europe",
+      path: "/europe",
+      subMenu: [
+        { name: "Cyprus", path: "/destinations/cyprus" },
+        { name: "France", path: "/destinations/france" },
+        { name: "Spain", path: "/destinations/spain" },
+        { name: "Germany", path: "/destinations/germany" },
+
+        { name: "Italy", path: "/destinations/italy" },
+        { name: "Finland", path: "/destinations/finland" },
+        { name: "Poland", path: "/destinations/poland" },
+        { name: "Malta", path: "/destinations/malta" },
+      ],
+    },
     { name: "United Kingdom", path: "/destinations/uk" },
-    { name: "Cyprus", path: "/destinations/cyprus" },
     { name: "Canada", path: "/destinations/canada" },
     { name: "Australia", path: "/destinations/australia" },
-    { name: "France", path: "/destinations/france" },
-    { name: "Germany", path: "/destinations/germany" },
-    { name: "Spain", path: "/destinations/Spain" },
+    { name: "UAE", path: "/destinations/uae" },
+    { name: "India", path: "/destinations/india" },
   ];
 
   // Test preparation list
@@ -86,8 +99,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-xl sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
+      <div className="max-w-7xl mx-auto px-4 ">
+        <div className="flex justify-between h-18 items-center">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
               {/* Logo image with enhanced shadow and vertical centering */}
@@ -99,7 +112,7 @@ const Navbar = () => {
                 <img
                   src={LogoImage}
                   alt="Star Education & Migration Consultancy Logo"
-                  className="h-10 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                   style={{
                     filter: "drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3))",
                   }}
@@ -154,18 +167,47 @@ const Navbar = () => {
                     variants={dropdownVariants}
                     className="absolute  translate-x-4 mt-2 py-2 w-56 bg-white rounded-md shadow-2xl z-50"
                   >
-                    <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100">
-                      Study Destinations
-                    </div>
                     {destinations.map((destination, index) => (
-                      <Link
-                        key={index}
-                        to={destination.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200"
-                        onClick={() => setDestinationsDropdown(false)}
-                      >
-                        {destination.name}
-                      </Link>
+                      <div key={index} className="relative group">
+                        <Link
+                          to={destination.path}
+                          className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200"
+                          onClick={() => setDestinationsDropdown(false)}
+                        >
+                          <div className="flex items-center justify-between">
+                            {destination.name}
+                            {destination.subMenu && (
+                              <svg
+                                className="w-4 h-4 ml-2"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            )}
+                          </div>
+                        </Link>
+                        {destination.subMenu && (
+                          <div className="absolute left-full top-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            {destination.subMenu.map((subItem, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                to={subItem.path}
+                                className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200"
+                                onClick={() => setDestinationsDropdown(false)}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                     <div className="px-4 py-2 border-t border-gray-100">
                       <Link
@@ -232,9 +274,9 @@ const Navbar = () => {
                     variants={dropdownVariants}
                     className="absolute  translate-x-4 mt-2 py-2 w-56 bg-white rounded-md shadow-2xl z-50"
                   >
-                    <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100">
+                    {/* <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100">
                       Test Preparation
-                    </div>
+                    </div> */}
                     {testPreparations.map((test, index) => (
                       <Link
                         key={index}
@@ -285,6 +327,12 @@ const Navbar = () => {
               className="px-2 py-2 text-lg font-normal text-gray-700 hover:text-blue-600 transition duration-300"
             >
               About Us
+            </Link>
+            <Link
+              to="/blog"
+              className="px-2 py-2 text-lg font-normal text-gray-700 hover:text-blue-600 transition duration-300"
+            >
+              Blogs
             </Link>
 
             <Link
@@ -491,6 +539,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 About Us
+              </Link>
+              <Link
+                to="/blog"
+                className="block px-3 py-2 text-lg font-normal text-gray-700 hover:text-blue-600 transition duration-300"
+                onClick={() => setIsOpen(false)}
+              >
+                Blogs
               </Link>
 
               <Link

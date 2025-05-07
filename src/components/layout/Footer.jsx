@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
@@ -9,7 +8,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1">
-            
             <h3 className="text-xl font-bold mb-4">
               Star Education & Migration
             </h3>
@@ -116,6 +114,14 @@ const Footer = () => {
                   About Us
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-gray-300 hover:text-white transition duration-300"
+                >
+                  Blogs
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -191,9 +197,7 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="text-gray-300">
-                  123 Education Street, City, Country
-                </span>
+                <span className="text-gray-300">Kathmandu, Nepal</span>
               </p>
               <p className="flex items-start">
                 <svg
@@ -210,8 +214,26 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span className="text-gray-300">+1 (123) 456-7890</span>
+                <span className="text-gray-300">+977 9802377993</span>
               </p>
+              <p className="flex items-start">
+                <svg
+                  className="h-5 w-5 mr-2 mt-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span className="text-gray-300">+977 9802377993</span>
+              </p>
+
               <p className="flex items-start">
                 <svg
                   className="h-5 w-5 mr-2 mt-1"
@@ -232,8 +254,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-       
 
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-3 pt-4 text-center">

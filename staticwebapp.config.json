@@ -29,6 +29,10 @@
       "rewrite": "/index.html"
     },
     {
+      "route": "/blog/*",
+      "rewrite": "/index.html"
+    },
+    {
       "route": "/about",
       "rewrite": "/index.html"
     }

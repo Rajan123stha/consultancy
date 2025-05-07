@@ -147,9 +147,7 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-gray-900">
                           Office Address
                         </h4>
-                        <p className="mt-1 text-gray-600">
-                           Kathmandu, Nepal
-                        </p>
+                        <p className="mt-1 text-gray-600">Kathmandu, Nepal</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -172,8 +170,9 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-gray-900">
                           Phone
                         </h4>
-                        <p className="mt-1 text-gray-600">+977 01-XXXXXXX</p>
-                        <p className="text-gray-600">+977 98XXXXXXXX</p>
+                        <p className="mt-1 text-gray-600">+977 9802377996</p>
+                        <p className="text-gray-600">+977 9802377993</p>
+                        <p className="text-gray-600">+977 9802377997</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -211,14 +210,14 @@ const Contact = () => {
                   </h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Monday - Friday:</span>
+                      <span className="text-gray-600">Sunday - Friday:</span>
                       <span className="text-gray-900 font-medium">
                         9:00 AM - 6:00 PM
                       </span>
                     </div>
-                    
+
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Sunday:</span>
+                      <span className="text-gray-600">Saturday:</span>
                       <span className="text-gray-900 font-medium">Closed</span>
                     </div>
                   </div>
@@ -241,7 +240,7 @@ const Contact = () => {
                 <iframe
                   title="Office Location"
                   className="w-full h-[400px] rounded-lg"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2400459073893!2d85.3103!3d27.7172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1629789045251!5m2!1sen!2snp"
+                  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6365.586075257616!2d85.32593395573055!3d27.70863819113288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb1907b99a7069%3A0xdabdb1d84af221a6!2sKathmandu%2044600!3m2!1d27.7075443!2d85.32239849999999!5e1!3m2!1sen!2snp!4v1746536721227!5m2!1sen!2snp"
                   loading="lazy"
                 ></iframe>
               </div>
