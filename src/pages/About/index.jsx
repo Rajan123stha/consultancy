@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, Button } from "../../components/ui";
-import aboutImage from "../../assets/images/test-prep-hero.png"; // You'll need to add this image
+import aboutImage from "../../assets/images/about.jpg"; // You'll need to add this image
 
 const AboutPage = () => {
   return (
