@@ -1,15 +1,19 @@
 import React from "react";
 import { Hero, Card } from "../../components/ui";
 import { destinationsData } from "../../data/educationData";
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const Destinations = () => {
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
         title="Study Abroad Destinations"
         subtitle="Explore our comprehensive range of study destinations and find your perfect educational pathway"
-        
       />
+      {/* <Hero
+        title="Study Abroad Destinations"
+        subtitle="Explore our comprehensive range of study destinations and find your perfect educational pathway"
+      /> */}
 
       {/* Intro Section */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">

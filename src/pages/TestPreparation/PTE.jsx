@@ -1,15 +1,20 @@
 import React from "react";
 import { Hero } from "../../components/ui";
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const PTE = () => {
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
+        title="PTE Preparation"
+        subtitle="Achieve your dream score with expert guidance"
+      />
+      {/* <Hero
         title="PTE Preparation"
         subtitle="Achieve your dream score with expert guidance"
         buttonText="Enroll Now"
         buttonLink="/contact"
-      />
+      /> */}
 
       {/* Introduction Section */}
       <section className="py-16 bg-gray-50">

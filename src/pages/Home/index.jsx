@@ -9,6 +9,7 @@ import Visa from "../../assets/images/visa-assistance.jpg";
 import Counseling from "../../assets/images/education-counseler.jpg";
 import testPrepImg from "../../assets/images/test-prep.jpg";
 import { blogData } from "../../data/blogData";
+import Banner from "../../components/ui/Banner";
 
 const HomePage = () => {
   // Using only first 4 items for home page
@@ -37,7 +38,8 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen">
-      <StudyAbroadHero />
+      <Banner />
+      {/* <StudyAbroadHero /> */}
       {/* Hero Section */}
 
       {/* About Section */}

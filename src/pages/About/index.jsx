@@ -1,16 +1,23 @@
 import React from "react";
 import { Hero, Button } from "../../components/ui";
 import aboutImage from "../../assets/images/about.jpg"; // You'll need to add this image
+import Banner from "../../components/ui/Banner";
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <Hero
+      <UsableBanner
         title="Who We Are"
         subtitle="Dedicated professionals committed to your education and migration journey"
         backgroundImage={aboutImage}
       />
+      {/* Hero Section */}
+      {/* <Hero
+        title="Who We Are"
+        subtitle="Dedicated professionals committed to your education and migration journey"
+        backgroundImage={aboutImage}
+      /> */}
 
       {/* Company Description */}
       <section className="py-16 bg-white">

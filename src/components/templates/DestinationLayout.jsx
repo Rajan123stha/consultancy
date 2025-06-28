@@ -1,18 +1,25 @@
 import React from "react";
 import { Hero, Button } from "../ui";
 import { motion } from "framer-motion";
+import UsableBanner from "../ui/UsableBanner";
+import Banner from "../../assets/images/abroad.jpg"; // Replace with your actual image path
 
 const DestinationLayout = ({ data, image }) => {
-  console.log("Destination Data:", data);
-  console.log("Image Data:", image); // Debugging line to check image data
-   // Debugging line to check data structure
+  // console.log("Destination Data:", data);
+  //console.log("Image Data:", image); // Debugging line to check image data
+  // Debugging line to check data structure
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
+        title={data.title}
+        subtitle={data.subtitle}
+        image={Banner}
+      />
+      {/* <Hero
         title={data.title}
         subtitle={data.subtitle}
         backgroundImage={image}
-      />
+      /> */}
 
       {/* Intro Section */}
       <section className="py-12 bg-gradient-to-b from-white to-gray-50">

@@ -139,7 +139,7 @@ const Navbar = () => {
                 }}
                 className="flex items-center px-2 py-2 text-lg font-normal text-gray-700 hover:text-blue-600 transition duration-300 focus:outline-none"
               >
-                Destinations
+                Study Abroad
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`h-4 w-4 ml-1 transition-transform duration-200 ${
@@ -418,7 +418,7 @@ const Navbar = () => {
                   }}
                   className="flex items-center w-full text-left text-gray-700 hover:text-blue-600 transition duration-300 focus:outline-none"
                 >
-                  Destinations
+                  Study Abroad
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className={`h-4 w-4 ml-1 transition-transform duration-200 ${
@@ -550,7 +550,7 @@ const Navbar = () => {
 
               <Link
                 to="/contact"
-                className="block mx-3 my-2 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition duration-300"
+                className="block mx-3 my-2 px-2  bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Contact Us

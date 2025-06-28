@@ -1,6 +1,7 @@
 import React from "react";
 import { Hero, Button } from "../../components/ui";
-import mockTestHeroImage from "../../assets/images/test-prep-hero.png"; // You'll need to add this image
+
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const MockTestPage = () => {
   // Sample mock test options
@@ -50,11 +51,15 @@ const MockTestPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Hero
+      <UsableBanner
+        title="Get Ready with Our Mock Tests"
+        subtitle="Practice under exam-like conditions and prepare effectively for your language proficiency tests"
+      />
+      {/* <Hero
         title="Get Ready with Our Mock Tests"
         subtitle="Practice under exam-like conditions and prepare effectively for your language proficiency tests"
         backgroundImage={mockTestHeroImage}
-      />
+      /> */}
 
       {/* Description Section */}
       <section className="py-16 bg-white">

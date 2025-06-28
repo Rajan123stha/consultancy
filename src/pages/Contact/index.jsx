@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Hero } from "../../components/ui";
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,11 +19,15 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
+        title="Get in Touch"
+        subtitle="We're here to help you achieve your educational goals"
+      />
+      {/* <Hero
         title="Get in Touch"
         subtitle="We're here to help you achieve your educational goals"
         height="h-[400px]"
-      />
+      /> */}
 
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
@@ -196,7 +201,7 @@ const Contact = () => {
                           Email
                         </h4>
                         <p className="mt-1 text-gray-600">
-                          info@stareducation.com
+                          application@staredum.com
                         </p>
                       </div>
                     </div>

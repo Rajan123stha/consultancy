@@ -1,22 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { blogData } from '../../data/blogData';
-import { Hero } from '../../components/ui';
+import React from "react";
+import { Link } from "react-router-dom";
+import { blogData } from "../../data/blogData";
+import { Hero } from "../../components/ui";
+import UsableBanner from "../../components/ui/UsableBanner";
+import Image from "../../assets/images/abroad.jpg"; // Replace with your actual image path
 
 const BlogPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Hero
+      <UsableBanner
+        title={"Blog"}
+        subtitle="Stay informed with the latest news and insights in international education"
+        image={Image}
+      />
+      {/* <Hero
         title="Our Blog"
         subtitle="Stay informed with the latest news and insights in international education"
-      />
+      /> */}
 
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogData.map((blog) => (
-              <Link 
-                to={`/blog/${blog.slug}`} 
+              <Link
+                to={`/blog/${blog.slug}`}
                 key={blog.id}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
               >
@@ -29,8 +36,12 @@ const BlogPage = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-blue-600 font-medium">{blog.category}</span>
-                    <span className="text-sm text-gray-500">{blog.readTime}</span>
+                    <span className="text-sm text-blue-600 font-medium">
+                      {blog.category}
+                    </span>
+                    <span className="text-sm text-gray-500">
+                      {blog.readTime}
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600">
                     {blog.title}

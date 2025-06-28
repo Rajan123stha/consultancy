@@ -1,16 +1,23 @@
 import React from "react";
 import { Hero, Card } from "../../components/ui";
 import { testPreparationsData } from "../../data/educationData";
+import UsableBanner from "../../components/ui/UsableBanner";
+import image from "../../assets/images/test1.jpg"; // Replace with your actual image path
 
 const TestPreparation = () => {
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
+        title="Test Preparation Courses"
+        subtitle="Expert coaching and comprehensive preparation for all major English proficiency tests"
+        image={image}
+      />
+      {/* <Hero
         title="Test Preparation Courses"
         subtitle="Expert coaching and comprehensive preparation for all major English proficiency tests"
         buttonText="Start Learning"
         buttonLink="/contact"
-      />
+      /> */}
 
       {/* Intro Section */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">

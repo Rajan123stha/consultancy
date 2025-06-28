@@ -4,7 +4,8 @@ import { Hero } from "../../../components/ui";
 import { motion } from "framer-motion";
 import { destinationsData } from "../../../data/educationData";
 import Card from "../../../components/ui/Card";
-
+import UsableBanner from "../../../components/ui/UsableBanner";
+import image from "../../../assets/images/europe.jpg"; // Replace with your actual image path
 const EuropeDestinations = () => {
   // Define European country slugs
   const europeanSlugs = [
@@ -27,10 +28,16 @@ const EuropeDestinations = () => {
 
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
         title="Study in Europe"
         subtitle="Discover world-class education opportunities across European destinations"
+        image={image} // Replace with your actual image path
       />
+
+      {/* // <Hero
+      //   title="Study in Europe"
+      //   subtitle="Discover world-class education opportunities across European destinations"
+      // /> */}
 
       {/* Introduction */}
       <section className="py-16 bg-white">
@@ -60,12 +67,12 @@ const EuropeDestinations = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {europeanDestinations.map((destination, index) => (
               <Card
-              key={destination.id}
-              title={destination.title}
-              description={destination.description}
-              image={destination.image}
-              linkTo={destination.linkTo}
-            />
+                key={destination.id}
+                title={destination.title}
+                description={destination.description}
+                image={destination.image}
+                linkTo={destination.linkTo}
+              />
             ))}
           </div>
         </div>

@@ -1,15 +1,22 @@
 import React from "react";
 import { Hero } from "../../components/ui";
+import image from "../../assets/images/test1.jpg";
+import UsableBanner from "../../components/ui/UsableBanner";
 
 const Duolingo = () => {
   return (
     <div className="min-h-screen">
-      <Hero
+      <UsableBanner
+        title="Duolingo English Test Coaching"
+        subtitle="Prepare for success with expert guidance"
+        image={image} // Replace with your actual image path
+      />
+      {/* <Hero
         title="Duolingo English Test Coaching"
         subtitle="Prepare for success with expert guidance"
         buttonText="Enroll Now"
         buttonLink="/contact"
-      />
+      /> */}
 
       {/* Introduction Section */}
       <section className="py-16 bg-gray-50">
